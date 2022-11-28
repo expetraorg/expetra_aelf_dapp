@@ -28,14 +28,13 @@ const Subscription = () => {
                 </SubTextWrapper>
             </SubCard>
             <SubCard>
-                <SubCardH2>Pro</SubCardH2>
-                <SubPrice>$6 /month</SubPrice>
+                <SubCardH2>Lifetime Premium with AELF</SubCardH2>
+                <SubPrice>for HOLD of 100 $ELF tokens</SubPrice>
                 <SubTextWrapper>
-                    <SubText>Track your expenses and income</SubText>
-                    <SubText>Basic analytics</SubText>
-                    <SubText>Support of 2 wallets</SubText>
-                    <SubText>Support of 8 categories</SubText>
-                    <SubText>Connect 1 web3 wallet</SubText>
+                    <SubText>All in Premium</SubText>
+                    <SubText>Other utilities</SubText>
+                    <SubText>TBA</SubText>
+                    <SubText>TBA</SubText>
                 </SubTextWrapper>
             </SubCard>
         </SubWrapper>
