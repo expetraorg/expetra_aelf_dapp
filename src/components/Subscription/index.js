@@ -28,11 +28,12 @@ const Subscription = () => {
                 </SubTextWrapper>
             </SubCard>
             <SubCard>
-                <SubCardH2>Lifetime Premium with AELF</SubCardH2>
-                <SubPrice>for HOLD of 100 $ELF tokens</SubPrice>
+                <SubCardH2>Lifetime Premium </SubCardH2>
+                <SubPrice>with AELF</SubPrice>
                 <SubTextWrapper>
-                    <SubText>All in Premium</SubText>
-                    <SubText>Other utilities</SubText>
+                    <SubText>HOLD 100 $ELF tokens to unlock all in Premium</SubText>
+                    <SubText></SubText>
+                    <SubText>Additional rewards</SubText>
                     <SubText>TBA</SubText>
                     <SubText>TBA</SubText>
                 </SubTextWrapper>

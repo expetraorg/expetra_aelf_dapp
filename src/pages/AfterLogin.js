@@ -49,9 +49,9 @@ const AfterLogin = () => {
     //     }
     // }; 
 
-    function connect() {
+    async function connect() {
         // reload()
-        aelf.login({
+        await aelf.login({
             chainId: 'AELF',
             payload: {
                 method: 'LOGIN',
@@ -63,11 +63,12 @@ const AfterLogin = () => {
         }).catch(error => {
             console.log('promise catch', error);
         });
-        aelf.chain.getChainStatus((error, result) => {
+
+        await aelf.chain.getChainStatus((error, result) => {
             console.log(error, result);
         });
 
-        aelf.chain.getChainStatus().then(result => {
+        await aelf.chain.getChainStatus().then(result => {
             console.log('promise then', result);
         }).catch(error => {
             console.log('promise catch', error);
@@ -141,11 +142,11 @@ const AfterLogin = () => {
                     <HeroH1>Welcome, {user.email}!</HeroH1>
                     <HeroP>Connect your <a href="https://chrome.google.com/webstore/detail/aelf-explorer-extension/mlmlhipeonlflbcclinpbmcjdnpnmkpf" target={"_blanck"}>NightELF</a> wallet!</HeroP>
                     <HeroBtnWrapper>
-                        <Button big primary onClick={refresh}>Download wallet</Button>
+                        <Button big primary onClick={refresh}>download wallet</Button>
                         <br/>
                         <Button big primary onClick={connect}>connect wallet</Button>
                         <br />
-                        <Button big primary onClick={getBalance}>get balance</Button>
+                        <Button big primary onClick={getBalance}>get premium</Button>
                         {has ? <HasModal open={isOpen} onClose={() => setIsOpen(false)} /> : <NoModal open={isOpen} onClose={() => setIsOpen(false)} />}
                     </HeroBtnWrapper>
                 </HeroContent>
