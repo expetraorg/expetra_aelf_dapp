@@ -97,14 +97,20 @@ const AfterLogin = () => {
             (err, balance) => {
                 console.log(err, balance);
                 if (balance.balance > 0) hasElf = true
+                else hasElf = false
             }
         );
-
+        
+        setIsOpen(true)
         if (hasElf) {
             updatePremium()
-            setIsOpen(true)
             setHas(true)
         }
+        else {
+            setHas(false)
+            setIsOpen(true)
+        }
+
     };
 
     const user = useUserAuth().user
